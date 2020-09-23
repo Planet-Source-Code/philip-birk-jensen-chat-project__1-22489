@@ -1,0 +1,35 @@
+BODY {
+	font-size:13px;
+	font-family:Verdana;
+}
+HR {
+	color:#0000B0;
+	height:1;
+}
+#UL {
+	margin-left:20;
+}
+A:link, A:visited, A:active {
+	text-decoration:none;
+	font-weight:Bold;
+	color:#0000B0;
+}
+A:hover {
+	text-decoration:underline overline;
+	color:#FFB56A;
+}
+#Head {
+	font-weight:Bold;
+  font-size:20px;
+  font-family:Arial;
+}
+#Sub {
+	font-weight:Bold;
+	font-size:17px;
+	font-family:Arial;
+}
+#SubSub {
+	font-weight:Bold;
+	font-size:13px;
+	text-decoration:underline;
+}

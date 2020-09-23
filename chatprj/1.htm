@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<!-- Minus AutoDato -->
+	<TITLE>Chat Project (1/3)</TITLE>
+<META NAME="Generator" CONTENT="Stone's WebWriter 3">
+<LINK REL="stylesheet" HREF="style.css" TYPE="text/css">
+</HEAD>
+<BODY>
+<SPAN ID="Head">Chat Project (1/3)</SPAN>
+<HR SIZE="1">
+<TABLE WIDTH="100%" BORDER="0">
+<TR>
+	<TD><FONT STYLE="font-family:Verdana;font-size:13px">
+&nbsp;&nbsp;First a very sad announcement, this will propably be my last winsock related article. Yes I know, no stop crying, it's not that sad, and hey YOU stop laughing :D.<BR><BR>
+<DIV ID="Sub">Getting Startet</DIV>
+<DIV ID="UL">
+<DIV ID="SubSub">Theory</DIV>
+<DIV ID="UL">
+&nbsp;&nbsp;As always we have a little theory in my winsock projects. This time it's just not about Winsock, actualy it's not theory, just a little check up.<BR><BR>
+&nbsp;&nbsp; I asume you have been reading my other <I>"briliant"</I> winsock articles, so you know a little about it. Just click on the next button, untill you get to the last page (don't know how many pages this article will be on yet). Now at the bottom of this page, you will find links to my other articles, read them, and let's get going (hmm <I>"flash back"</I>, I have written this before.
+</DIV><BR>
+<DIV ID="SubSub">Understanding the program</DIV>
+<DIV ID="UL">
+&nbsp;&nbsp;See I changed the headline of this subject, normaly it's just <I>"Creating the program"</I> and not <I>"Understanding the program"</I>, big stuff!<BR><BR>
+&nbsp;&nbsp;You have two projects, each located in their own directory. The one called <I>"Server"</I> is, the server program (I don't know how smart you are, so I have to tell you this), and likewise with the <I>"Client"</I>. I will start by explaining the server. And I start with the server, because that is how you start when you program. You always start with the server, so you can test you'r client right away.
+</DIV><BR>
+<DIV ID="SubSub">The server project</DIV>
+<DIV ID="UL">
+<CENTER>
+<IMG SRC="1.gif" BORDER="0" WIDTH="248" HEIGHT="163" ALIGN="bottom" ALT="">
+</CENTER><BR>
+&nbsp;&nbsp;That's how the server program look. A very boring GUI (Graphical User Interface, maybe I should write an enyclopedia with words as my next article, or just an extra article to all my articles), but that is how a server looks. In the start it wasn't even visible, but just for fun I made it visible, as an server admin you like to see some stats.<BR><BR>
+&nbsp;&nbsp;You might ask you'r self why I have some of my taskbar and tray in the picture. Well it's because the server puts it self in the tray when it starts up. When double clicking it, it will pop up the log and when right clicking 3 options will appear, <I>"Start Server"</I>, <I>"Stop Server"</I> and <I>"End Application"</I>, that should be pretty easy to understand. If you want to learn more about that you can try to figure it out by looking in my project, but search the internet for a better example on putting a program to the tray. In my project there isn't many options or information about the tray, find another example with much more info and options.<BR><BR>
+&nbsp;&nbsp;When the project starts, it loads the information in the <I>"Sub Main"</I>, find this in the <I>"modMain"</I>. If you don't know about this, how that will run, before the form, then read the comments, it will explain all lifes mistory. Well that is very easy to understand.<BR><BR>
+&nbsp;&nbsp;Damn everything is so easy to understand, that this article is of no need, but still. So I think I will only tell you what it does in huge steps, the projects are heavily commented, so that should be easy to understand.<BR><BR>
+&nbsp;&nbsp;There are a start and a stop function in the project. It starts and stop the server, by using <I>"listen"</I> method. Again easy to understand.<BR><BR>
+&nbsp;&nbsp;There will be added a little something to the log every time something important happends, like starting server, stopping server, people log in and out (well that's it). It's very easy to add you own information to the log, for example if you want to know what people are talking about, all you need is a little code in the <I>"GetData"</I> sub located in the <I>"modMain"</I>.<BR><BR>
+&nbsp;&nbsp;I will talk a little about the <i>"GetData"</i> sub now, this sub could be very important if you decide to build up the project to something bigger. I will tell you how now. The the string called <I>"sName"</I> should be changed to <I>"sType"</I>, just so it's easier to understand. Now add a <I>"Select Case sType"</I>, and then a lot of cases, for example: "WhoIs", "Whisper", "AdminLogin", etc. that way you hav a lot of options. So the client can send a whois, and then a name, again an example: The client sends this String <I>"AdminLogin|DogBoy,U8dE7"</I>, now the <I>"GetData"</I> will search for the <I>"AdminLogin"</I>, in it's <I>"Select Case"</I>. When it finds this, it does what ever is in that, in this case it would be log the user in as an administrator, with the admin name <I>"DogBoy"</I> and password <I>"U8dE7"</I> (passwords are always case sensetive, for more security, and more password options).<BR><BR>
+&nbsp;&nbsp;Wow that was a lot of text, if you'r bored it's alright to stop reading, what am I saying, you can't stop reading or I will start....erhhh sending you love letters, HA. *whew*, good with a little joke on all that information (yes it was a joke, no one would ever love you :)<BR><BR>
+&nbsp;&nbsp;Well I will write about the Client project on the next page, although not as much, because there isn't as much to tell you about.
+</DIV>
+</DIV>
+<DIV STYLE="text-align:right"><A HREF="2.htm">Next</A></DIV>
+</TD>
+	<TD WIDTH="200" BGCOLOR="#eeeeee" VALIGN="TOP"><FONT STYLE="font-family:Verdana;font-size:13px">
+<B>I hoped for more info on making network programs?</B><BR>
+Click next untill you are at the last page of the article, there I have some other articles, that explain very well about programming over network. Not to show off or anything, but they are VERY VERY good, and I have only got good response.<HR SIZE="1">
+<B>What about some code examples?</B><BR>
+Yes I know I have this in my other articles, but this one is a little more text related, than code related. Check the projects following with this article?</B><BR>
+Yes it can.<HR SIZE="1">
+</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>
